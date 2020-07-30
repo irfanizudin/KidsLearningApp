@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Kids Learning App</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+        integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+
+<body>
+
+    <div id="timeUp" class="text-center align-items-center p-5">
+        <h1 class="mt-5 ">Time is UP!!</h1>
+        <h5 class="font-weight-bold ">Waktu penggunaan Kids Learning App telah habis, tutup aplikasi ini dan gunakan
+            waktu kalian dengan
+            hal lain</h5>
+        <h4 class="font-weight-bold ">Kids Learning App</h4>
+        <p>Developed by Irfan Izudin</p>
+        <div class="d-flex justify-content-center mt-2 ">
+            <a href="https://github.com/irfanizudin" target="_blank"><i class="fab fa-github text-white mr-3"></i></a>
+            <a href="https://www.instagram.com/irfanizudin/" target="_blank"><i
+                    class="fab fa-instagram text-white mr-3 "></i></a>
+            <a href="https://www.youtube.com/channel/UCDO-BfU4897CJwJhYch9Vsw/" target="_blank"><i
+                    class="fab fa-youtube text-white"></i></a>
+        </div>
+    </div>
+
+    <nav class="nav align-items-center font-21">
+        <div class="container">
+            <a href="#"><i class="fas fa-chart-bar float-left text-white"><span class="ml-2">Kids
+                        Lapp</span></i></a>
+            <a class="toggle hamburger" onclick="toggleSidebar()"><i
+                    class="fas fa-align-right float-right text-white"></i></a>
+        </div>
+    </nav>
+
+    <div id="overlay" onclick="toggleSidebar()"></div>
+
+    <section id="sidebar" class="d-flex flex-column text-center">
+
+        <a class=" c1" data-toggle="modal" data-target="#channelList">Channel List</a>
+        <a data-toggle="modal" data-target="#reminder">Reminder</a>
+        <a data-toggle="modal" data-target="#about">About</a>
+
+    </section>
+
+    <section id="channel">
+        <!-- Modal -->
+        <div class="modal fade" id="channelList" data-backdrop="static" tabindex="-1" role="dialog"
+            aria-labelledby="channelListLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-white" id="channelListLabel">Channel List</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body ">
+                        <div class="container">
+                            <div class="d-flex channel-item text-left mb-2" username="SmartBooksMedia">
+                                <div class="channel-thumb"><img
+                                        src="https://yt3.ggpht.com/a/AATXAJxO5NKQYVQ9F-WotZMzquEyP0Ih6uNYvwkTGJZH8A=s88-c-k-c0xffffffff-no-rj-mo"
+                                        alt=""></div>
+                                <div class="channel-name text-white align-self-center">
+                                    Pinkfong! Kids' Songs & Stories
+                                </div>
+                            </div>
+
+                            <div class="d-flex channel-item text-left mb-2" username="SesameStreet">
+                                <div class=" channel-thumb"><img
+                                        src="https://yt3.ggpht.com/a/AATXAJzs8hfJmkGiaDQ3DzDFMcWBlj2-aMbh3djR2JVF6g=s88-c-k-c0xffffffff-no-rj-mo"
+                                        alt=""></div>
+                                <div class="channel-name text-white align-self-center">
+                                    Sesame Street
+                                </div>
+                            </div>
+
+                            <div class="d-flex channel-item  text-left mb-2" username="ohmygenius">
+                                <div class="channel-thumb"><img
+                                        src="https://yt3.ggpht.com/a/AATXAJxjdZhIcn5GLbM0RRtj0rHbRbmjEbgREgkJGgnF7Q=s88-c-k-c0xffffffff-no-rj-mo"
+                                        alt=""></div>
+                                <div class="channel-name text-white align-self-center">
+                                    Oh My Genius - Nursery Rhymes And Kids Songs
+                                </div>
+                            </div>
+
+                            <div class="d-flex channel-item  text-left mb-2" username="braincandytelevision">
+                                <div class="channel-thumb"><img
+                                        src="https://yt3.ggpht.com/a/AATXAJxUT0UuWK1a_S8VkOx00owU4kJW1Zwd-Y__khJq=s88-c-k-c0xffffffff-no-rj-mo"
+                                        alt=""></div>
+                                <div class="channel-name text-white align-self-center">
+                                    Brain Candy TV
+                                </div>
+                            </div>
+
+                            <div class="d-flex channel-item  text-left mb-2" username="lescopaque">
+                                <div class="channel-thumb"><img
+                                        src="https://yt3.ggpht.com/a/AATXAJwa9QBRHgb_Ztf0dYTRL6bowtPaXBEGRkaRfJ4iQA=s88-c-k-c0xffffffff-no-rj-mo"
+                                        alt=""></div>
+                                <div class="channel-name text-white align-self-center">
+                                    Les' Copaque Production
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="remind">
+        <!-- Modal -->
+        <div class="modal fade" id="reminder" data-backdrop="static" tabindex="-1" role="dialog"
+            aria-labelledby="reminderLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-white" id="reminderLabel">Reminder</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body ">
+                        <div class="container">
+                            <div class="setReminder">
+                                <label for="selectpicker" class="text-white">Set Time </label>
+                                <br><select class="selectpicker">
+                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="15">15 minutes</option>
+                                    <option value="30">30 minutes</option>
+                                    <option value="45">45 minutes</option>
+                                    <option value="60">1 hour</option>
+                                </select>
+                            </div>
+                            <div class="soundReminder mt-3">
+                                <label for="soundReminder" class="text-white">Test Sound Reminder</label>
+                                <br><button class="btn-Test btn-sm btn-success">Test</button>
+
+                            </div>
+                            <div class="remainingTime mt-3">
+                                <label for="remaining-time" class="text-white ">Remaining Time</label><br>
+                                <div class="d-flex timerdiv">
+                                    <div class="remaining-time timer text-white mt-1 ml-4 ">
+                                    </div>
+                                    <div class="btn-Stop btn-sm btn-warning ml-3 order-1 align-items-center">Remove
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary btn-Set">Set</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-us">
+        <!-- Modal -->
+        <div class="modal fade" id="about" data-backdrop="static" tabindex="-1" role="dialog"
+            aria-labelledby="aboutLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-white" id="aboutLabel">About</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body ">
+                        <div class="container">
+                            <div class="about-desc text-white text-center">
+                                <p>Kids Learning App adalah aplikasi web yang dapat digunakan sebagai media belajar
+                                    anak.
+                                    Terdapat beragam video yang terfilter khusus buat anak sehingga lebih aman
+                                    digunakan. Terdapat pula fitur reminder yang dapat digunakan untuk membantu
+                                    mengingatkan berapa lama penggunaan aplikasi ini.<br>Aplikasi ini juga support di
+                                    beberapa device seperti smartphone, tablet, dan tentunya web</p>
+                                <p class="mt-5 dev">Developed by Irfan Izudin</p>
+                            </div>
+                            <div class="d-flex justify-content-center mt-2 ">
+                                <a href="https://github.com/irfanizudin" target="_blank"><i
+                                        class="fab fa-github text-white mr-3"></i></a>
+                                <a href="https://www.instagram.com/irfanizudin/" target="_blank"><i
+                                        class="fab fa-instagram text-white mr-3 "></i></a>
+                                <a href="https://www.youtube.com/channel/UCDO-BfU4897CJwJhYch9Vsw/" target="_blank"><i
+                                        class="fab fa-youtube text-white"></i></a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="welcomeScreen">
+        <!-- Modal -->
+        <div class="modal fade" id="welcome" data-backdrop="static" tabindex="-1" role="dialog"
+            aria-labelledby="welcomeLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-white" id="welcomeLabel">Kids Learning App</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body ">
+                        <div class="container">
+                            <div class="welcome-desc text-white text-center">
+                                <h2>Selamat datang di <span>Kids Learning App</span></h2>
+                                <hr>
+                                <p>Kids Learning App adalah aplikasi web yang dapat digunakan sebagai media belajar
+                                    anak.
+                                    Terdapat beragam video yang terfilter khusus buat anak sehingga lebih aman
+                                    digunakan. Terdapat pula fitur reminder yang dapat digunakan untuk membantu
+                                    mengingatkan berapa lama penggunaan aplikasi ini.<br>Aplikasi ini juga support di
+                                    beberapa device seperti smartphone, tablet, dan tentunya web</p>
+                                <p class="mt-5 dev">Developed by Irfan Izudin</p>
+                            </div>
+                            <div class="d-flex justify-content-center  ">
+                                <a href="https://github.com/irfanizudin" target="_blank"><i
+                                        class="fab fa-github text-white mr-3"></i></a>
+                                <a href="https://www.instagram.com/irfanizudin/" target="_blank"><i
+                                        class="fab fa-instagram text-white mr-3 "></i></a>
+                                <a href="https://www.youtube.com/channel/UCDO-BfU4897CJwJhYch9Vsw/" target="_blank"><i
+                                        class="fab fa-youtube text-white"></i></a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary btn-welcomeSet" data-toggle="modal"
+                            data-target="#reminder">Set
+                            Reminder</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mainVideo">
+        <div id="mainVid"></div>
+        <div id="detailMain"></div>
+    </section>
+
+    <section id="listVideo">
+        <div class="container">
+            <div id="listVid" class="row"></div>
+        </div>
+    </section>
+
+    <footer class="text-center d-flex align-items-center justify-content-center">
+        <p class="text-white footer-text ">copyright@2020</p>
+    </footer>
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timer.jquery/0.7.0/timer.jquery.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
