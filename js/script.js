@@ -72,7 +72,7 @@ $(document).ready(function () {
 
 
     //load channel
-    const key = 'AIzaSyC0faUqclz7fFCKuO8ViteHT3SCleKA0LY';
+    const key = 'Your API Key';
     const urlChannel = 'https://www.googleapis.com/youtube/v3/channels';
     const defaultUsername = 'SmartBooksMedia';
 
