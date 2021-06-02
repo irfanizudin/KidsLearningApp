@@ -1,5 +1,5 @@
 # KidsLearningApp
-Web Application which is used as learning media tools for kids. Collecting videos from youtube specifically for kids and has a reminder feature in order to remind application usage.
+Web Application used as learning media tools for kids. Collecting kids videos from youtube and has a reminder feature to remind application usage.
 
 Technology Stack
 - HTML, CSS, Javascript
